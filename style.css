@@ -1,0 +1,109 @@
+@font-face {font-family: "OctemberScript";
+    src: url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/7e033da6ebcf38cf86cbf2c0c0924f24.svg#OctemberScript") format("svg"); /* iOS 4.1- */
+}
+body{
+    margin:0;
+    font-family: "OctemberScript";
+    background-color: #f9f2f2;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    background-color: #baa7a7;
+    margin-bottom:20px;
+    padding: 10px;
+}
+.img-fluid {
+    padding:1rem;
+    max-width: 100%;
+    height: auto;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.filter-image {
+    text-align: center;
+    width: 50%;
+    max-width: 150px;
+}
+img.rotate{
+    animation: rotateAnimation 1s linear; 
+    animation-fill-mode: both;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    padding: 0px;
+    border-radius: 10px;
+    max-width: 90vh;
+    margin:auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main .inputArea{
+    width: 100%;
+    max-width: 90%;
+    min-height: 8rem;
+    border:none;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    font-size:18px;
+    padding: 10px;
+}
+.main .translate{
+    min-width:40%;
+    max-width:600px;
+    min-height: 1rem;
+    padding: 10px;
+    border-radius:5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    font-size:18px;
+    padding: 10px;
+    background-color: white;
+    border:none;
+    transition: background-color .3s ease;
+}
+.translate:hover{
+    background-color:#baa7a7
+}
+.main #outputArea{
+    width: 100%;
+    max-width: 90%;
+    min-height: 7rem;
+    border:none;
+    border-radius:5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    font-size:18px;
+    padding: 10px;
+    background-color:white
+}
+footer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    background-color: #baa7a7;   
+}
